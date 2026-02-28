@@ -6,9 +6,53 @@ import os
 st.set_page_config(page_title="Katalog Anggrek", layout="wide")
 st.markdown("""
 <style>
+
+/* Background */
 .stApp {
     background-color: #F8BBD0;
 }
+
+/* Semua teks utama */
+.stApp, .stApp p, .stApp span, .stApp div {
+    color: #880E4F !important;
+}
+
+/* Judul utama */
+h1 {
+    color: #F33A77 !important;
+}
+
+/* Header kategori */
+h2 {
+    color: #C71585 !important;
+}
+
+/* NAMA PRODUK (INI YANG PENTING) */
+[data-testid="stMarkdownContainer"] h3 {
+    color: #AD1457 !important;
+}
+
+/* Harga */
+[data-testid="stMarkdownContainer"] h3 strong {
+    color: #2E7D32 !important;
+}
+
+/* Status */
+[data-testid="stMarkdownContainer"] p {
+    color: #880E4F !important;
+}
+
+hr {
+    border-color: #F33A77 !important;
+}
+.stButton > button {
+    background-color: white !important;
+    color: #880E4F !important;
+    border: 2px solid #F33A77 !important;
+    border-radius: 12px !important;
+    font-weight: bold !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
